@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Garuda Javascript AJAX</title>
+	<script type="text/javascript" src="GF.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<meta name="og:image"     content="browser-support.png" />
+	<meta name="ROBOTS"     content="index"/>
+	<meta name="Author"     content="Lamhot Simamora" />
+	<meta name="copyright"    content="Copyright@2017 | All Right Reserved" />
+	<meta property="og:title"   content="Garuda Javascript For AJAX" />
+	<meta property="og:description" content="Garuda Javascript For AJAX" />
+	<meta property="og:image"     content="https://camo.githubusercontent.com/947830628690b4a89e4aa3e47a33cf61fce8e292/68747470733a2f2f6c616d686f7473696d616d6f72612e6769746875622e696f2f4761727564612d4672616d65776f726b2d50726f66657373696f6e616c2d45646974696f6e2f4761727564612d4672616d65776f726b2d50726f2d45646974696f6e2d4c6f676f2d4f6666696369616c2e706e67" />
+	<meta property="og:name"      content="Garuda Javascript For AJAX" />
+	<meta name="language"       content="Indonesian, English" />
+	<meta name="distribution"     content="Global" />
+	<meta name="rating"       content="General" />
+	<meta name="expires"      content="1800" />
+	<meta name="theme-color"      content="#9b59b6"> 
+	<link rel="shortcut icon" type="image/png" href="ico.png"/> 
+</head>
+<body>
+	
+	
+	<div class="container">
+			</br>
+			
+			<hr>
+			<div class="container">
+				<div class="jumbotron">
+
+				<center>
+					<img src="https://camo.githubusercontent.com/947830628690b4a89e4aa3e47a33cf61fce8e292/68747470733a2f2f6c616d686f7473696d616d6f72612e6769746875622e696f2f4761727564612d4672616d65776f726b2d50726f66657373696f6e616c2d45646974696f6e2f4761727564612d4672616d65776f726b2d50726f2d45646974696f6e2d4c6f676f2d4f6666696369616c2e706e67" width="100" height="100" class="img-thumbnail">
+					<h3>Garuda Javascript Ajax</h3>
+				</center>
+				<hr>
+					<center>
+						<button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#modalCode">View Code</button>
+						<hr><hr>
+						<button class="btn btn-primary btn-md" onclick="loadData();">Test Load Data</button> </br></br>
+						<button class="btn btn-warning btn-md" onclick="loadPost();">Test Post</button></br></br>
+						<button class="btn btn-default btn-md" onclick="loadGet();">Test Get</button></br></br>
+						<button class="btn btn-danger btn-md" onclick="loadPut();">Test Put</button></br></br>
+					</center>
+					
+				</div>
+			</div>
+			<hr>
+			
+			<div class="container">
+				<div class="panel panel-default">
+				  <div class="panel-heading"><gf style="color:red" id="url"> </gf></div>
+				  <div class="panel-body" id="display_result">
+				  		
+				  </div>
+				</div>
+			</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div id="modalCode" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Code for Ajax (GET,POST,PUT)</h4>
+	      </div>
+	      <div class="modal-body">
+	        	
+	        		<pre class="prettyprint">
+	        			<code  id="code"></code>
+		        	</pre>
+	        	
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<script type="text/javascript" src="app.js"></script>
+	
+	<script type="text/javascript">
+		_loadDoc("app.js",function(r){
+			_printTo("code","&lt;script&gt;"+r+"&lt;/script&gt;");
+		});
+		function loading(){
+			_printTo("display_result",'<center><img src="loading.gif" alt="" width="300" height="200"></center>');
+		}
+	</script>
+</body>
+</html>

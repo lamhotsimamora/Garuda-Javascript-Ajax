@@ -1,2 +1,2 @@
 # Garuda-Javascript-Ajax
-Garuda Javascript For AJAX
+Special Garuda Javascript For AJAX
