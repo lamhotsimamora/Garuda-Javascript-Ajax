@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2017, Garuda Query Javascript
+Copyright (c) 2017, Garuda Query Javascript Special AJAX
 Author  : Lamhot Simamora. 
 Source  : https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/JS/GF-1.js
 License : https://raw.githubusercontent.com/lamhotsimamora/GF-Javascript/master/LICENSE
