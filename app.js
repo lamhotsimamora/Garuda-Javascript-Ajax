@@ -17,7 +17,6 @@ function loadPost(){
 	loading();
 	var url = 'https://www.lamhotsimamora.com/FAKE-API/';
 	_requestPOST(url,"id_user=1&username=lorem ipsum",function(r){
-		_writeLog(r);
 		   if (r==false)
 		   {
 		   	  return;
