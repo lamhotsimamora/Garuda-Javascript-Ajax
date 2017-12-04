@@ -42,7 +42,7 @@ https://lamhotsimamora.github.io/Garuda-Javascript-Ajax/
  var url = 'https://www.lamhotsimamora.com/FAKE-API/';
 	_requestPOST(url,"id_user=1&username=lorem ipsum",function(r){
 	            // Check if status code is 404 
-		        // (r==false)
+		    // (r==false)
 		   if (r==false)
 		   {
 		   	  return;
@@ -56,7 +56,7 @@ https://lamhotsimamora.github.io/Garuda-Javascript-Ajax/
  var url = 'https://jsonplaceholder.typicode.com/posts/1/comments';
 	_requestGET(url,function(r){
 	            // Check if status code is 404 
-		        // (r==false)
+		   // (r==false)
 		   if (r==false)
 		   {
 		   	  return;
@@ -70,13 +70,34 @@ https://lamhotsimamora.github.io/Garuda-Javascript-Ajax/
  var url = 'https://reqres.in/api/users/2';
 	_requestPUT(url,function(r){
 	             // Check if status code is 404 
-		        // (r==false)
+		    // (r==false)
 		   if (r==false)
 		   {
 		   	  return;
 		   }
 		    _writeLog(r);
 	});
+```
+
+------------------------
+
+## BONUS Code
+```
+ // HTML
+ <input type="text" id="my_username" placeholder="Username">
+```
+```
+ // For get value of input text
+ var my_username =  _getValById("my_username");
+ 
+ // For get object of input text
+ var my_obj      =  _getById("my_username");
+ 
+ // For clear the input text
+ _clear("my_username");
+ 
+ // For write custom console log 
+ _writeLog(my_username);
 ```
 
 
