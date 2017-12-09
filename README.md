@@ -20,6 +20,7 @@ https://cdn.rawgit.com/lamhotsimamora/Garuda-Javascript-Ajax/master/GF.js
 ### Demo Page
 ```
 https://lamhotsimamora.github.io/Garuda-Javascript-Ajax/
+https://jsfiddle.net/LamhotSimamora/c5pophLn/
 ```
 
 
