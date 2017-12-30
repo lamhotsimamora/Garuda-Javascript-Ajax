@@ -1,6 +1,6 @@
 # Garuda-Javascript-Ajax
 
-Garuda Javascript Special for AJAX, with method ( POST,GET,& PUT )
+Garuda Javascript Special for AJAX, with method ( POST,GET, PUT & Delete )
 
 ### Getting Started
 ```
@@ -80,7 +80,22 @@ https://jsfiddle.net/LamhotSimamora/c5pophLn/
 	});
 ```
 
+### Code Method DELETE
+```
+ var url = 'https://jsonplaceholder.typicode.com/posts/1';
+	_requestDELETE(url,function(r){
+	            // Check if status code is 404 
+		    // (r==false)
+		   if (r==false)
+		   {
+		   	  return;
+		   }
+		    _writeLog(r);
+	});
+```
+
 ------------------------
+
 
 ## BONUS Code
 ```
