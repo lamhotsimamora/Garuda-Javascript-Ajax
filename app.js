@@ -16,6 +16,22 @@ function loadData(){
 	  });
 }
 
+function loadDelete(){
+	loading();
+	var url = 'https://jsonplaceholder.typicode.com/posts/1';
+	_requestDELETE(url,function(r){
+		    // Check if status code is 404 
+		    // (r==false)
+		   if (r==false)
+		   {
+		   	  return;
+		   }
+		    _writeLog(r);
+		   _printTo("display_result",r);
+		   _printTo("url","URL :  "+url);
+	});
+}
+
 function loadPost(){
 	loading();
 	var url = 'https://www.lamhotsimamora.com/FAKE-API/';
